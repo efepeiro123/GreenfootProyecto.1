@@ -1,17 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class aerplane here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class aerplane extends Actor
+/*******************************************
+Universidad del Valle de Guatemala 
+Programación Orientada a objetos
+Sección: 41
+
+Evelyn Fernanda López Peiró
+Carné: 21126
+Fecha: 28/07/2021
+*******************************************/
+public class airplane extends Actor
 {
     private int speed;
-
+    //private string GameOver;
     
-    public aerplane(int v){
+    public airplane(int v){
         speed= v;
         GreenfootImage myImage = getImage();
         int myNewHeight = (int)myImage.getHeight()*2/4;
@@ -19,7 +22,7 @@ public class aerplane extends Actor
         myImage.scale(myNewWidth, myNewHeight);
     }
     
-    public aerplane()
+    public airplane()
     {
         GreenfootImage myImage = getImage();
         int myNewHeight = (int)myImage.getHeight()*2/4;
@@ -29,15 +32,16 @@ public class aerplane extends Actor
     
     
     /**
-     * Act - do whatever the aerplane wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+    Aerplane
      */
 
     public void act()
     {
+        //Esta parte hace que el avión siempre este a 90 grados cuando inicia
+        //el juego
         if(getRotation()!=270)
             setRotation(270);
-        // Add your action code here.
+        //Con las letras w,s,a,d se moverá el avión 
         if(Greenfoot.isKeyDown("w")){
             if(getY() > 100)
             setLocation(getX() , getY() - speed);
@@ -65,14 +69,20 @@ public class aerplane extends Actor
         
         choque();
     }
+    //Con este metodo sucede que si el avión toca una bomba. el juego termina o para
+    //porque chocaron la bomba y el avión
     public void choque(){
         Actor collided = getOneIntersectingObject(bomba.class);
         if (collided != null)
         {
             getWorld().removeObject(this);
             Greenfoot.stop();
+            //GameOver = new string ("Game Over");
+            //Esto dara sonido cuando choquen
+            //Greenfoot.playSound("choque1.wav");
         }
     }
+    // Con este metodo la velocidad del avión va aumentando con el tiempo y niveles
     public void velocidad(){
         speed++;
     }

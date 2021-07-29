@@ -1,11 +1,14 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class Fondo2 here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+/*******************************************
+Universidad del Valle de Guatemala 
+Programación Orientada a objetos
+Sección: 41
+
+Evelyn Fernanda López Peiró
+Carné: 21126
+Fecha: 28/07/2021
+*******************************************/
 public class Fondo2 extends World
 {
     private counter score;
@@ -13,8 +16,9 @@ public class Fondo2 extends World
     private int velocidad_avion;
     private int adelantar;
     private int num_nivel;
-    private aerplane fer;
+    private airplane fer;
     private int enemigos;
+    //private GameOver Nuevo;
     /**
      * Constructor for objects of class Fondo2.
      * 
@@ -22,19 +26,25 @@ public class Fondo2 extends World
     public Fondo2()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        //Tamaño del fondo
         super(580, 550, 1); 
+        
+        //Variables
         adelantar = 0;
         num_nivel = 4;
         velocidad_avion = 2;
         
+        //Constructores
         score = new counter ("Score: ");
         nivel = new counter ("Nivel: ");
         nivel.add(1);
-        fer = new aerplane(velocidad_avion);
+        fer = new airplane(velocidad_avion);
+        //Nuevo = new string ("Game Over");
         
         addObject(fer, 285, 480);
         addObject(nivel, 500, 50);
         addObject(score, 100, 50);
+        //addObject(Nuevo,300,300);
     }
     
     public void act(){
@@ -118,75 +128,6 @@ public class Fondo2 extends World
             }
             
             enemigos = 2;
-            
-           /* camino_bombas++;
-            camino_bombas = camino_bombas % 2;
-            
-           if(camino_bombas == 0){
-                addObject(new bomba(velocidad_avion), 50,90);
-            }
-            else if(camino_bombas == 1){
-                addObject(new bomba(velocidad_avion), 150,90);
-            }
-            else if(camino_bombas == 2){
-                addObject(new bomba(velocidad_avion), 250,90);
-            }
-            else if(camino_bombas == 3){
-                addObject(new bomba(velocidad_avion), 350,90);
-            }
-            else if(camino_bombas == 4){
-                addObject(new bomba(velocidad_avion), 450,90);
-            }
-            else{
-                addObject(new bomba(velocidad_avion), 550,90);
-            }
-            
-            camino_bombas++;
-            camino_bombas = camino_bombas % 3;
-            
-           if(camino_bombas == 0){
-                addObject(new bomba(velocidad_avion), 50,90);
-            }
-            else if(camino_bombas == 1){
-                addObject(new bomba(velocidad_avion), 150,90);
-            }
-            else if(camino_bombas == 2){
-                addObject(new bomba(velocidad_avion), 250,90);
-            }
-            else if(camino_bombas == 3){
-                addObject(new bomba(velocidad_avion), 350,90);
-            }
-            else if(camino_bombas == 4){
-                addObject(new bomba(velocidad_avion), 450,90);
-            }
-            else{
-                addObject(new bomba(velocidad_avion), 550,90);
-            }
-            
-            camino_bombas++;
-            camino_bombas = camino_bombas % 4;
-            
-           if(camino_bombas == 0){
-                addObject(new bomba(velocidad_avion), 150,90);
-            }
-            else if(camino_bombas == 1){
-                addObject(new bomba(velocidad_avion), 50,90);
-            }
-            else if(camino_bombas == 2){
-                addObject(new bomba(velocidad_avion), 250,90);
-            }
-            else if(camino_bombas == 3){
-                addObject(new bomba(velocidad_avion), 350,90);
-            }
-            else if(camino_bombas == 4){
-                addObject(new bomba(velocidad_avion), 450,90);
-            }
-            else{
-                addObject(new bomba(velocidad_avion), 550,90);
-            }
-           
-            enemigos = 5;*/
-            
         
         }
     }

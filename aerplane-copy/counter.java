@@ -1,11 +1,13 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+/*******************************************
+Universidad del Valle de Guatemala 
+Programación Orientada a objetos
+Sección: 41
 
-/**
- * Write a description of class Contador here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+Evelyn Fernanda López Peiró
+Carné: 21126
+Fecha: 28/07/2021
+*******************************************/
 public class counter extends Actor
 {
     private int value = 0;

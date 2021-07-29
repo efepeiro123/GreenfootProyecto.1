@@ -1,11 +1,14 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class bomba here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+/*******************************************
+Universidad del Valle de Guatemala 
+Programación Orientada a objetos
+Sección: 41
+
+Evelyn Fernanda López Peiró
+Carné: 21126
+Fecha: 28/07/2021
+*******************************************/
 public class bomba extends Actor
 {
     private int speed;
@@ -24,6 +27,7 @@ public class bomba extends Actor
         if( getY() >= getWorld().getHeight() - 1 ){
             Fondo2 juego = (Fondo2) getWorld();
             juego.removeObject(this);
+            //Greenfoot.playSound("Choque.wav");
             juego.puntuacion(2);
             juego.rivales();
             juego.adelantar(); 
