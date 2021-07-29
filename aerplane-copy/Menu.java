@@ -26,7 +26,7 @@ public class Menu extends World
     
     //Metodo colocarPiezasMundo para definir la posición de cada pieza
     private void colocarPiezasMundo(){
-        addObject(new TituloJuego(), 290, 100);
+        addObject(new TituloJuego(), 290, 140);
         addObject(new Jugar (), 290, 300);
         addObject(new Salir (), 290, 400);
         addObject(flecha, 150,300);

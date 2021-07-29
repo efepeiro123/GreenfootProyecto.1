@@ -75,11 +75,12 @@ public class airplane extends Actor
         Actor collided = getOneIntersectingObject(bomba.class);
         if (collided != null)
         {
+            Greenfoot.playSound("AirplaneSound.mp3");
             getWorld().removeObject(this);
             Greenfoot.stop();
             //GameOver = new string ("Game Over");
             //Esto dara sonido cuando choquen
-            //Greenfoot.playSound("choque1.wav");
+            //Greenfoot.playSound("AiplaneSound.mp3");
         }
     }
     // Con este metodo la velocidad del avión va aumentando con el tiempo y niveles

@@ -19,8 +19,8 @@ public class Salir extends Actor
     public Salir()
     {
         GreenfootImage myImage = getImage();
-        int myNewHeight = (int)myImage.getHeight()*2/5;
-        int myNewWidth = (int)myImage.getWidth()*2/3;
+        int myNewHeight = (int)myImage.getHeight()*1/2;
+        int myNewWidth = (int)myImage.getWidth()*1/2;
         myImage.scale(myNewWidth, myNewHeight);
     }
 }

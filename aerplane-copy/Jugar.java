@@ -19,7 +19,7 @@ public class Jugar extends Actor
     public Jugar()
     {
         GreenfootImage myImage = getImage();
-        int myNewHeight = (int)myImage.getHeight()*2/5;
+        int myNewHeight = (int)myImage.getHeight()*2/3;
         int myNewWidth = (int)myImage.getWidth()*2/3;
         myImage.scale(myNewWidth, myNewHeight);
     }
