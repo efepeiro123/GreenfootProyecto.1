@@ -11,6 +11,7 @@ Fecha: 28/07/2021
 *******************************************/
 public class bomba extends Actor
 {
+    //Propiedad
     private int speed;
     
     public bomba(int v){
@@ -22,13 +23,13 @@ public class bomba extends Actor
      */
     public void act()
     {
-        // Add your action code here.
+        // Metodo para remover la bomba cuando el avión las esquive
         setLocation(getX(), getY() + speed);
         if( getY() >= getWorld().getHeight() - 1 ){
             Fondo2 juego = (Fondo2) getWorld();
-            Greenfoot.playSound("Bomba (mp3cut.net).wav");
+            //Greenfoot.playSound("000923726_prev.wav");
             juego.removeObject(this);
-            juego.puntuacion(2);
+            juego.puntuacion(2); //esto aumenta los puntos de 2 en 2 con forme las bombas van pasando
             juego.rivales();
             juego.adelantar(); 
         }

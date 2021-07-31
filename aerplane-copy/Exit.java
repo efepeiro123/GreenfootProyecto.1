@@ -16,6 +16,7 @@ public class Exit extends Actor
     {
         // Add your action code here.
     }
+     //Metodo para definir tamaño de la palabra exit
     public Exit()
     {
         GreenfootImage myImage = getImage();

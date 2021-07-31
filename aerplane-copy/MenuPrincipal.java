@@ -1,12 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class Menu here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class Menu extends World
+/*******************************************
+Universidad del Valle de Guatemala 
+Programación Orientada a objetos
+Sección: 41
+
+Evelyn Fernanda López Peiró
+Carné: 21126
+Fecha: 28/07/2021
+*******************************************/
+public class MenuPrincipal extends World
 {
     Flecha flecha = new Flecha();
     private int opcion = 0;
@@ -15,11 +18,11 @@ public class Menu extends World
      * Constructor for objects of class Menu.
      * 
      */
-    public Menu()
+    public MenuPrincipal()
     {    
         // Se define el tamaño del fondo
         super(580, 550, 1);
-        //Se llama al metodo colocarPiezasMundo para colocar la imagen de "jugar", "salir", y
+        //Se llama al metodo colocarPiezasMundo para colocar la imagen de "jugar", "instrucciones", y
         //"flecha" en la imagen de Menú
         colocarPiezasMundo();
     }
@@ -30,9 +33,6 @@ public class Menu extends World
         addObject(new Jugar (), 290, 320);
         addObject(new Instructions (), 290, 380);
         addObject(new TextoMenu (), 290, 510);
-        //addObject(new Salir (), 290, 500);
-        //addObject(new Instructions (), 290, 370);
-        //addObject(new Credits (), 280, 420);
         addObject(flecha, 90,320);
     }
     
@@ -60,7 +60,7 @@ public class Menu extends World
                 case 0: //Esta opcion es para jugar
                     Greenfoot.setWorld(new Fondo2()); //new MyWorld creara el nuevo mundo, es decir, el mundo en donde esta el juego
                     break;
-                case 1: //Esta opcion es para salir del juego
+                case 1: //Esta opcion es para ir al apartado de instrucciones
                     Greenfoot.setWorld(new Instrucciones());
                     break;
             }

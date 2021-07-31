@@ -10,6 +10,7 @@ Fecha: 28/07/2021
 *******************************************/
 public class counter extends Actor
 {
+    //Propiedades
     private int value = 0;
     private int target = 0;
     private String text;
@@ -18,6 +19,7 @@ public class counter extends Actor
     public counter(){
         this("");
     }
+    //Metodo para definir el tamaño y letra que aparecen en pantalla como "score" y "nivel"
     public counter(String prefix)
     {
         text = prefix;
@@ -31,6 +33,7 @@ public class counter extends Actor
         
         updateImage();
     }
+    //Metodo para aumentar o disminuir
     public void act() {
         if(value < target) {
             value++;
@@ -54,5 +57,5 @@ public class counter extends Actor
         GreenfootImage image = getImage();
         image.clear();
         image.drawString(text + value, 1, 18);
-    }// Add your action code here.
+    }
 }

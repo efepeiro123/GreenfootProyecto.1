@@ -1,13 +1,17 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class Instrucciones here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+/*******************************************
+Universidad del Valle de Guatemala 
+Programación Orientada a objetos
+Sección: 41
+
+Evelyn Fernanda López Peiró
+Carné: 21126
+Fecha: 28/07/2021
+*******************************************/
 public class Instrucciones extends World
 {
+    //Propiedades
     FlechaBlanca flecha = new FlechaBlanca();
     private int opcion = 0;
     /**
@@ -16,9 +20,9 @@ public class Instrucciones extends World
      */
     public Instrucciones()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+         // Se define el tamaño del fondo.
         super(580, 550, 1); 
-        
+        //Se llama al metodo colocarPiezasMundo para colocar la imagen de "play", "exit", etc. en la imagen de Menú
         colocarPiezasMundo();
     }
     private void colocarPiezasMundo(){
@@ -50,6 +54,7 @@ public class Instrucciones extends World
                     Greenfoot.setWorld(new Fondo2()); //new MyWorld creara el nuevo mundo, es decir, el mundo en donde esta el juego
                     break;
                 case 1: //Esta opcion es para salir del juego
+                    Greenfoot.setWorld(new MenuPrincipal());
                     Greenfoot.stop();
                     break;
             }

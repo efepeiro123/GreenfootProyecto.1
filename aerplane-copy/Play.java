@@ -16,6 +16,7 @@ public class Play extends Actor
     {
         // Add your action code here.
     }
+    //Metodo para definir tamaño de la palabra play
     public Play()
     {
         GreenfootImage myImage = getImage();
