@@ -75,9 +75,11 @@ public class airplane extends Actor
         Actor collided = getOneIntersectingObject(bomba.class);
         if (collided != null)
         {
-            Greenfoot.playSound("AirplaneSound.mp3");
+            //Greenfoot.playSound("XD (mp3cut.net).wav");
+            Greenfoot.playSound("GameOver (mp3cut.net).wav");
             getWorld().removeObject(this);
-            Greenfoot.stop();
+            Greenfoot.setWorld(new Final());
+            //Greenfoot.stop();ESTO FUE LO QUE PUSISTE EN COMENTARIO HACE UN RATO PARA QUE EL JUEGO NO PARARA Y ASÍ DAR LA OPCIOŃ DE VOLVER A JUGAR
             //GameOver = new string ("Game Over");
             //Esto dara sonido cuando choquen
             //Greenfoot.playSound("AiplaneSound.mp3");

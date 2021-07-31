@@ -16,8 +16,8 @@ public class Flecha extends Actor
     public Flecha()
     {
         GreenfootImage myImage = getImage();
-        int myNewHeight = (int)myImage.getHeight()*2/8;
-        int myNewWidth = (int)myImage.getWidth()*2/8;
+        int myNewHeight = (int)myImage.getHeight()*1/5;
+        int myNewWidth = (int)myImage.getWidth()*1/5;
         myImage.scale(myNewWidth, myNewHeight);
     }
     

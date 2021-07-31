@@ -26,8 +26,8 @@ public class bomba extends Actor
         setLocation(getX(), getY() + speed);
         if( getY() >= getWorld().getHeight() - 1 ){
             Fondo2 juego = (Fondo2) getWorld();
+            Greenfoot.playSound("Bomba (mp3cut.net).wav");
             juego.removeObject(this);
-            //Greenfoot.playSound("Choque.wav");
             juego.puntuacion(2);
             juego.rivales();
             juego.adelantar(); 

@@ -16,4 +16,11 @@ public class GameOver extends Actor
     {
         // Add your action code here.
     }
+    public GameOver()
+    {
+        GreenfootImage myImage = getImage();
+        int myNewHeight = (int)myImage.getHeight()*1;
+        int myNewWidth = (int)myImage.getWidth()*1;
+        myImage.scale(myNewWidth, myNewHeight);
+    }
 }
