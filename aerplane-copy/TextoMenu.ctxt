@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=TextoMenu
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ TextoMenu\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\nUniversidad\ del\ Valle\ de\ Guatemala\ \r\nProgramaci\u00F3n\ Orientada\ a\ objetos\r\nSecci\u00F3n\:\ 41\r\n\r\nEvelyn\ Fernanda\ L\u00F3pez\ Peir\u00F3\r\nCarn\u00E9\:\ 21126\r\nFecha\:\ 28/07/2021\r\n
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ TextoMenu\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n

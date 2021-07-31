@@ -1,11 +1,14 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class Final here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+/*******************************************
+Universidad del Valle de Guatemala 
+Programación Orientada a objetos
+Sección: 41
+
+Evelyn Fernanda López Peiró
+Carné: 21126
+Fecha: 28/07/2021
+*******************************************/
 public class Final extends World
 {
     FlechaBlanca flecha = new FlechaBlanca();
